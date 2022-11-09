@@ -31,12 +31,9 @@ jobs:
       - name: Run test suite
         run: |
           pipenv run pytest
-          
+
   report:
     runs-on: ubuntu-latest
-    test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
